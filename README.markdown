@@ -5,6 +5,16 @@ The great thing about BBEdit packages in BBEdit 10 is the fact that everything i
 
 This package is part "code you can find elsewhere on the internet" (the Git Blame and diff language modules, for example), and new stuff that I just wrote.
 
+Installation
+============
+
+    $ cd Library/Application\ Support/BBEdit/
+    $ mkdir Packages # if it doesn't already exists
+    $ cd Packages
+    $ git clone https://github.com/rwilcox/git.bbpackage.git
+
+And restart BBEdit.
+
 License
 ================
 
