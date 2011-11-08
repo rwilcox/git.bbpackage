@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<!--
+	BBEdit codeless language module for git blame output.
+	Feel free to customize.
+
+	After installing and relaunching, I suggest you go to Preferences ->
+	Languages -> Installed Languages -> Diff Output -> Options... ->
+	Colors, and change Comments to green and String Constants to red.
+	Or something.
+
+	2008-07-11
+	http://pudge.net/
+
+	Requires BBEdit 8.0 or higher. To install, copy here:
+
+		~/Library/Application Support/BBEdit/Language Modules/
+
+	and relaunch BBEdit.
+
+
+-->
+<dict>
+	<key>BBEditDocumentType</key>
+	<string>CodelessLanguageModule</string>
+	<key>BBLMLanguageCode</key>
+	<string>GBlm</string>
+	<key>BBLMColorsSyntax</key>
+	<true/>
+	<key>BBLMIsCaseSensitive</key>
+	<false/>
+	<key>BBLMLanguageDisplayName</key>
+	<string>Git Blame</string>
+	<key>BBLMScansFunctions</key>
+	<false/>
+
+	<key>BBLMSuffixMap</key>
+	<array>
+		<dict>
+			<key>BBLMLanguageSuffix</key>
+			<string>.gitblame</string>
+		</dict>
+	</array>
+
+	<key>Language Features</key>
+	<dict>
+		<key>String Pattern</key>
+		<string>^\w{8}</string>
+		<key>Comment Pattern</key>
+		<string> \(.+ \d{4}-\d\d-\d\d \d\d:\d\d:\d\d [+-]\d{4}\s+\d+\) </string>
+	</dict>
+</dict>
+</plist>
