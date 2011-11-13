@@ -15,6 +15,17 @@ Installation
 
 And restart BBEdit.
 
+Contributing
+======================
+
+Please feel free to contribute. However, there is something to keep in mind: BBEdit for some reason doesn't like the uncompiled versions of some Applescripts (for example, the git commit Applescript).
+
+Plus, having BBEdit compile an Applescript every time is much slower than compiling it once.
+
+To avoid this, I've created a ApplescriptSources folder. Modify the .applescript file here, then save a compiled version in the Scripts/git folder.
+
+At some point I'll write a shell script or Makefile to automate this process, or figure out what's wrong...
+
 License
 ================
 

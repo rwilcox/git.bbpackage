@@ -2,6 +2,7 @@ to getGitRootFolder()
 	set output to ""
 	tell application "BBEdit"
 		set asAlias to file of first document as alias
+		display dialog asAlias
 		tell application "Finder" to set parentFolder to container of asAlias as alias
 		set posixPathToFolder to POSIX path of parentFolder
 		
