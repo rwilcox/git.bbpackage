@@ -6,5 +6,5 @@
 # FROM: <https://github.com/isao/shell/blob/master/bbedit/Scripts/gitx.sh>
 #
 
-cd `dirname "$BB_DOC_PATH"`
+cd "$(dirname "$BB_DOC_PATH")"
 $SHELL -c gitx
