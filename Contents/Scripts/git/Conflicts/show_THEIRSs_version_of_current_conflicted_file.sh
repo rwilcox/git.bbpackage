@@ -11,4 +11,4 @@ cd "$PROJECT_ROOT"
 # Thanks <http://stackoverflow.com/a/167365/224334> !!!
 git show :3:`absolute_to_relative_path "$BB_DOC_PATH" "$PROJECT_ROOT"` > "$BB_DOC_PATH.conflict.theirs"
 
-/usr/local/bin/bbedit "$BB_DOC_PATH.conflict.ours"
+/usr/local/bin/bbedit "$BB_DOC_PATH.conflict.theirs"
