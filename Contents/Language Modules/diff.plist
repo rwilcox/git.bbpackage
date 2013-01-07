@@ -43,6 +43,12 @@
 			<string>.diff</string>
 		</dict>
 	</array>
+	<key>BBLMKeywordList</key>
+	<array>
+	  <string>git</string>
+	  <!-- no actual keywords here, mostly to silence BB warnings to console -->
+	</array>
+
 	<key>Language Features</key>
 	<dict>
 		<key>Close Block Comments</key>
