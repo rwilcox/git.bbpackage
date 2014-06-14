@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 
 """This script will take cvs conflict lines and apply the INPUT changes
 (the repository version).
@@ -19,28 +19,28 @@ def process_line(myLine):
 	global inRepo
 	global outputList
 	global inConflict
-	
+
 	if "<<<<<<<" in myLine:
 		inSandbox = True
 		inRepo = False
 		inConflict = True
 		return
-		
+
 	if "=======" in myLine:
 		inRepo = True
 		inSandbox = False
 		return
-	
+
 	if ">>>>>>>" in myLine:
-		inConflict = False	
+		inConflict = False
 		return
-			
+
 	if inSandbox or (not inConflict):
 		print myLine[:-1] #line ending added automatically, we don't want an extra one. WD-rpw 8/6/03
 
-			
-	
+
+
 
 for my_line in fileinput.input():
 	process_line(my_line)
-	
+
