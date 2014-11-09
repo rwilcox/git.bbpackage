@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<!-- Basic highlighting for git commit messages -->
+
+<dict>
+	<key>BBEditDocumentType</key>         
+	<string>CodelessLanguageModule</string>
+
+	<key>BBLMLanguageCode</key>
+	<string>GMsg</string>
+
+	<key>BBLMColorsSyntax</key>
+	<true/>
+
+	<key>BBLMIsCaseSensitive</key>
+	<false/>
+
+	<key>BBLMLanguageDisplayName</key>    
+	<string>Git Commit Message</string>
+
+	<key>BBLMScansFunctions</key>
+	<false/>
+
+  <key>BBLMCommentLineDefault</key>
+  <string># </string>
+
+	<key>BBLMFileNamesToMatch</key>
+  <array>
+    <string>COMMIT_EDITMSG</string>
+  </array>
+	<key>BBLMKeywordList</key>
+	<array>
+	  <string>git</string>
+	  <!-- no actual keywords here, mostly to silence BB warnings to console -->
+	</array>
+
+  <key>Language Features</key>
+  <dict>
+    <key>Open Line Comments</key>     <string>#</string>
+  </dict>
+
+</dict>
+</plist>
